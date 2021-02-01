@@ -1,0 +1,37 @@
+unit Uloja01;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.Menus;
+
+type
+  TForm1 = class(TForm)
+    MainMenu1: TMainMenu;
+    Principal1: TMenuItem;
+    Sair1: TMenuItem;
+    Cadastros1: TMenuItem;
+    Clientes1: TMenuItem;
+    Fornecedores1: TMenuItem;
+    Produtos1: TMenuItem;
+    Produtos2: TMenuItem;
+    Movimentao1: TMenuItem;
+    Movimentao2: TMenuItem;
+    Saida1: TMenuItem;
+    Caixa1: TMenuItem;
+    Caixa2: TMenuItem;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,115 @@
+object frmCadMovimentacao: TfrmCadMovimentacao
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Cadastro de Movimentac'#227'o'
+  ClientHeight = 432
+  ClientWidth = 718
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 24
+    Width = 319
+    Height = 29
+    Caption = 'Gerrenciar Movimenta'#231#245'es'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Top = 67
+    Width = 144
+    Height = 16
+    Caption = 'Tipo de Movimenta'#231#227'o'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Top = 199
+    Width = 82
+    Height = 16
+    Caption = 'Respons'#225'vel'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 24
+    Top = 264
+    Width = 84
+    Height = 16
+    Caption = 'Observa'#231#245'es'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 24
+    Top = 135
+    Width = 77
+    Height = 16
+    Caption = 'data e Hora'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object DBComboBox1: TDBComboBox
+    Left = 24
+    Top = 88
+    Width = 177
+    Height = 21
+    Items.Strings = (
+      'Entrada '
+      'Sa'#237'da')
+    TabOrder = 0
+  end
+  object DBEdit1: TDBEdit
+    Left = 24
+    Top = 157
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object DBEdit2: TDBEdit
+    Left = 24
+    Top = 221
+    Width = 121
+    Height = 21
+    TabOrder = 2
+  end
+  object DBMemo1: TDBMemo
+    Left = 24
+    Top = 286
+    Width = 377
+    Height = 123
+    TabOrder = 3
+  end
+end

@@ -1,0 +1,16 @@
+program loja01;
+
+uses
+  Vcl.Forms,
+  Uloja01 in 'Uloja01.pas' {Form1},
+  UCadProduto in 'UCadProduto.pas' {frmCadProdutos};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmCadProdutos, frmCadProdutos);
+  Application.Run;
+end.

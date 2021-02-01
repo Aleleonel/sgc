@@ -1,0 +1,79 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 534
+  Width = 758
+  object conexao: TFDConnection
+    Params.Strings = (
+      'User_Name=root'
+      'Database=clientes'
+      'DriverID=MySQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 48
+    Top = 32
+  end
+  object tbprodutos: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = conexao
+    UpdateOptions.UpdateTableName = 'clientes.produtos'
+    TableName = 'clientes.produtos'
+    Left = 128
+    Top = 32
+  end
+  object dsProdutos: TDataSource
+    DataSet = tbprodutos
+    Left = 128
+    Top = 88
+  end
+  object tbMovimentacoes: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = conexao
+    UpdateOptions.UpdateTableName = 'clientes.movimentacoes'
+    TableName = 'clientes.movimentacoes'
+    Left = 240
+    Top = 32
+  end
+  object dsMovimentacoes: TDataSource
+    DataSet = tbMovimentacoes
+    Left = 240
+    Top = 88
+  end
+  object tbMovProdutos: TFDTable
+    Connection = conexao
+    UpdateOptions.UpdateTableName = 'clientes.movimentacoes_produtos'
+    TableName = 'clientes.movimentacoes_produtos'
+    Left = 352
+    Top = 32
+  end
+  object dsMovProdutos: TDataSource
+    DataSet = tbMovProdutos
+    Left = 352
+    Top = 88
+  end
+  object sqlAumentaEstoque: TFDCommand
+    Connection = conexao
+    ParamData = <
+      item
+        Name = 'pId'
+      end
+      item
+        Name = 'pQtd'
+      end>
+    Left = 128
+    Top = 160
+  end
+  object sqlDiminuiEstoque: TFDCommand
+    Connection = conexao
+    ParamData = <
+      item
+        Name = 'pId'
+      end
+      item
+        Name = 'pQtd'
+      end>
+    Left = 120
+    Top = 232
+  end
+end
